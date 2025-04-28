@@ -123,6 +123,38 @@ section.hero{
  
 }
 
+
+  .services .row {
+    display: flex;               /* Flexbox layout for cards */
+    justify-content: space-between; /* Spread the cards evenly across the row */
+    gap: 20px;                   /* Add space between the cards */
+    flex-wrap: nowrap;           /* Prevent the cards from wrapping to the next line */
+  }
+
+  .services .card {
+    flex: 1;                      /* Ensure all cards take equal width */
+    max-width: 18rem;             /* Set maximum width for each card */
+    margin: 0;                    /* Remove any extra margin */
+  }
+
+  .card-body p {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+
+  .card-body h5 {
+    font-size: 1.1rem;
+    color: #343a40;
+  }
+
+  .hover-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+
+
 /* About */
 @media screen and (min-width:1024px){
   section.about .container,section.about.testimonials .container{
@@ -132,31 +164,77 @@ section.hero{
 }
 
 
-/* projects */
+/* Projects Section */
+section.projects {
+  padding: 4rem 0;
+  background-color: #f8f9fa; /* Light background */
+}
+
 section.projects .card {
-  max-width: 17rem;
+  max-width: 20rem;
   text-align: left;
+  border: 2px solid #d3d3d3; /* light grey border */
+  box-shadow: 6px 6px 0px #d3d3d3; /* match the border color */
+  border-radius: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+  background-color: #ffffff;
 }
 
-section.projects .card img{
-max-width: 70%;
-margin:1rem auto;
-
+section.projects .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 8px 8px var(--accent-color, #6c63ff);
 }
 
-section.card,
-.btn-outline-dark{
-  border: 2px solid #000000;
-  box-shadow: 4px 4px #000000;
+section.projects .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #d3d3d3; /* light grey separator for image */
+}
+
+section.projects .card-body {
+  padding: 1.5rem;
+}
+
+section.projects .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+section.projects .card-text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.btn-outline-dark {
+  border: 2px solid #d3d3d3; /* light grey button border */
+  box-shadow: 4px 4px #d3d3d3;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
 .btn-outline-dark:hover {
-  box-shadow: 4px 4px var(--accent-color);
+  background-color: var(--accent-color, #6c63ff);
+  color: #ffffff;
+  box-shadow: 4px 4px var(--accent-color, #6c63ff);
 }
- section.card {
-  max-width: 22rem;
-  margin-inline: auto;
- }
+
+section.projects h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #333;
+}
+
+.row {
+  justify-content: center;
+  gap: 2rem;
+}
 
  /* testimonial */
  
