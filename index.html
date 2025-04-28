@@ -12,6 +12,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"  referrerpolicy="no-referrer" />
+
+
     <title>Protfolio   https://www.youtube.com/watch?v=4j_1LWZL0kE&t=81s</title>
   </head>
   <body>
@@ -33,7 +37,7 @@
               <a class="nav-link " href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#testimonial">Testimonial</a>
+              <a class="nav-link " href="#contact">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link  d-lg-none" href="#contact-me">Contact</a>
@@ -53,7 +57,8 @@
 
 <div class="col-sm-6">
   <h1 class="display-2">Syeda S Nabeel</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime impedit inventore aliquid ea quod earum excepturi quisquam, quae illo nostrum distinctio blanditiis ullam non sunt dolorum aspernatur et. Saepe, dicta.</p>
+<p>I'm a front-end developer with a strong foundation in Laravel and PHP, specializing in building responsive, user-friendly interfaces. I combine HTML, CSS, JavaScript, and Blade templating to create seamless front-end experiences integrated with robust back-end logic. I work closely with teams to ensure clean, maintainable code and stay updated with the latest tools and trends in modern web development.
+  </p>
 <button class="btn btn-outline-dark btn-lg">Projects</button>
 </div>
 <div class="col-sm-6 text-center">
@@ -67,136 +72,138 @@
     
 <section class="services" id="services">
   <div class="container">
-    <h2 class="display-5" fw-bold mb-3>Services</h2>
+    <h2 class="display-5 fw-bold mb-5 text-center">Services</h2>
     <div class="row">
-      <div class="col-lg sm-4 mt-4">
-        <div class="card" style="width: 18rem;">
-          <i class="bi bi-cup-hot-fill m-auto"></i>
-            <div class="card-body">
-            <h5 class="card-title fw-bold">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            
+
+      <!-- Front-end Development Card -->
+      <div class="col-lg-4 col-sm-6 mt-4">
+        <div class="card shadow-sm border-0 rounded-lg hover-card">
+          <div class="row p-3">
+            <div class="col-sm-3 text-center">
+              <i class="fa-brands fa-html5" style="font-size: 30px; color: #e34f26;"></i>
+              <p>HTML</p>
+            </div>
+            <div class="col-4 text-center">
+              <i class="fa-brands fa-css3-alt" style="font-size: 30px; color: #1572b6;"></i>
+              <p>CSS</p>
+            </div>
+            <div class="col-4 text-center">
+              <i class="fa-brands fa-js-square" style="font-size: 30px; color: #f7df1e;"></i>
+              <p>JS</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Front-end Development</h5>
+            <p class="card-text">Responsive, mobile-friendly UI design with HTML, CSS, JavaScript, and Blade templating for dynamic content in Laravel.</p>
           </div>
         </div>
       </div>
-      <div class="col-lg sm-4 mt-4">
-        <div class="card" style="width: 18rem;">
-          <i class="bi bi-cup-hot-fill m-auto"></i>
-            <div class="card-body">
-            <h5 class="card-title fw-bold">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            
+
+      <!-- PHP/Laravel Integration Card -->
+      <div class="col-lg-4 col-sm-6 mt-4">
+        <div class="card shadow-sm border-0 rounded-lg hover-card">
+          <div class="row p-3">
+            <div class="col-6 text-center">
+              <i class="fa-brands fa-php" style="font-size: 30px; color: #777bb3;"></i>
+              <p>PHP</p>
+            </div>
+            <div class="col-6 text-center">
+              <i class="fa-solid fa-code" style="font-size: 30px; color: #ff2d20;"></i>
+              <p>Laravel</p>
+            </div>
           </div>
-        </div>
-      </div> <div class="col-lg sm-4 mt-4">
-        <div class="card" style="width: 18rem;">
-          <i class="bi bi-cup-hot-fill m-auto"></i>
-            <div class="card-body">
-            <h5 class="card-title fw-bold">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            
+          <div class="card-body">
+            <h5 class="card-title fw-bold">PHP/Laravel Integration</h5>
+            <p class="card-text">Integrating front-end and back-end using Laravel. Creating reusable Blade components, implementing routing, and controllers.</p>
           </div>
         </div>
       </div>
+
+      <!-- Version Control & GitHub Card -->
+      <div class="col-lg-4 col-sm-6 mt-4">
+        <div class="card shadow-sm border-0 rounded-lg hover-card">
+          <div class="row p-3">
+            <div class="col-12 text-center">
+              <i class="fa-brands fa-github" style="font-size: 30px; color: #333;"></i>
+              <p>GitHub</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Version Control & Collaboration</h5>
+            <p class="card-text">Using Git to track changes and collaborate on projects. I create neat, simple web pages for portfolios and small businesses.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
+
+
 
 <!-- section -->
 
 <section class="about" id="about">
   <div class="container">
     <h2 class="display-5 fw-bold mb-4">About Me</h2>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum eius velit autem possimus voluptates cum amet facilis facere. Dolores ratione totam ea magni eius alias saepe sed delectus explicabo et.</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum eius velit autem possimus voluptates cum amet facilis facere. Dolores ratione totam ea magni eius alias saepe sed delectus explicabo et.</p>
+    <h3>Career Switch Introduction ! Aspiring Software Developer</h3>
+    <p>I am a dedicated and detail-oriented professional with over 13 years of experience in the banking sector, most Lastly served as an Assistant Manager at Habib Bank Limited's Head Office in Karachi. During my tenure, I led and supported critical functions across various departments including Global Operations, Cash Management, and Consumer Assets. My roles demanded precision, strong analytical skills, and effective communication with stakeholders both locally and internationally.<br>
+      With a strong foundation in operations and Nostro FCY reconciliation, I’ve now successfully transitioned into software development. I have developed hands-on skills in HTML, CSS, JavaScript, PHP, SQL, and the Laravel framework, and have built three full-stack projects to demonstrate my capabilities. My background in process optimization and system-driven operations provides a unique edge in understanding user needs and delivering practical, efficient tech solutions.<br>
+      I am excited to bring my problem-solving mindset, passion for technology, and strong organizational skills into the world of software development. I'm particularly interested in back-end development and building applications that improve workflows and user experiences.
+    </p>
     </div>
 </section>
 
 <section class="projects" id="projects">
   <div class="container">
     <h2 class="display-5 fw-bold mb-4">Projects</h2>
-<div class="row">
+<div class="row d-flex justify-content-center">
+  
   <div class="col-lg col-sm-3 mt-4">
     <div class="card">
-      <img class="card-img-top" src="./OIP.jfif" alt="Card image cap">
+      <img class="card-img-top" src="./building.PNG"width="500px" height="200px" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+        <h5 class="card-title">Construction projects</h5>
+        <p class="card-text">I developed a responsive website using HTML5, Bootstrap 5, and custom CSS.
+          The site features a smooth navigation bar, interactive carousel, and organized service and portfolio sections.
+          Design with user-friendly forms and dynamic team profiles.Project highlights skills in frontend web development, responsiveness, and Bootstrap integration</p>
+        <a href="https://github.com/SyedaSahrish/BUILDINGS.git" class="btn btn-outline-dark">My Coding</a>
       </div>
     </div>
   </div>
   <div class="col-lg col-sm-3 mt-4">
     <div class="card">
-      <img class="card-img-top" src="./OIP.jfif" alt="Card image cap">
+      <img class="card-img-top" src="./calc.PNG"width="500px" height="100px" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+        <h5 class="card-title">Calculator Project</h5>
+        <p class="card-text">This project builds a basic calculator using HTML for structure, CSS for styling with a dark and colorful theme, and JavaScript for interactive functionality. Users can input numbers, operators, clear entries, and evaluate expressions dynamically through button clicks. Flexbox is used for clean button arrangement, and calculations are handled using JavaScript’s eval() function.</p>
+        <a href="#" class="btn btn-outline-dark">My Coding</a>
       </div>
     </div>
   </div>
-  <div class="col-lg col-sm-3 mt-4">
+  <!-- <div class="col-lg col-sm-3 mt-4">
     <div class="card">
-  <img class="card-img-top" src="./OIP.jfif" alt="Card image cap">
+  <img class="card-img-top" src="./clock.PNG" width="500px" height="200px" alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
+    <h5 class="card-title">Clock</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="#" class="btn btn-outline-dark">Go somewhere</a>
   </div>
 </div>
-  </div>
+  </div> -->
   <div class="col-lg col-sm-3 mt-4">
     <div class="card">
-  <img class="card-img-top" src="./OIP.jfif" alt="Card image cap">
+  <img class="card-img-top" src="./playful-pic.PNG"  width="500px" height="200px"  alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+    <h5 class="card-title">Playful outing </h5>
+    <p class="card-text">I created a responsive sports-themed website using HTML, CSS, and Bootstrap, featuring multiple sections like Home, About, Services, and Contact.The site includes interactive elements like a dynamic burger menu for mobile view and a styled contact form.I used Flexbox and media queries to ensure full responsiveness.JavaScript is used to toggle navigation visibility, enhancing user experience on smaller screens.
+      
+      </p>
+    <a href="https://github.com/SyedaSahrish/SPORTS.git" class="btn btn-outline-dark">My Coding</a>
   </div>
 </div>
   </div>
 </div> 
-  </div>
-</section>
-<section class="testimonial" id="testimonial">
-  <div class="container">
-    <h2 class="display-5 fw-bold mb-4">Testimonial</h2>
-    <!-- --------------carousal--------start -->
-    <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <!-- <img src="..." class="d-block w-100" alt="..."> -->
-          <p class="para">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora esse enim doloribus totam inventore doloremque ducimus maiores quisquam aliquid quae, ut expedita? Doloremque itaque totam facere ad nam sint dolorem.
-          </p>
-          <h5>Syeda Sahrish Nabeel</h5>
-        </div>
-        <div class="carousel-item">
-          <!-- <img src="..." class="d-block w-100" alt="..."> -->
-          <p class="para">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora esse enim doloribus totam inventore doloremque ducimus maiores quisquam aliquid quae, ut expedita? Doloremque itaque totam facere ad nam sint dolorem.
-          </p>
-          <h5>Syeda Sahrish Nabeel</h5>
-        </div>
-        <div class="carousel-item">
-          <!-- <img src="..." class="d-block w-100" alt="..."> -->
-          <p class="para">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora esse enim doloribus totam inventore doloremque ducimus maiores quisquam aliquid quae, ut expedita? Doloremque itaque totam facere ad nam sint dolorem.
-          </p>
-          <h5>Syeda Sahrish Nabeel</h5>
-        </div>
-      </div>
-      <button class="carousel-control-prev test" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next test" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <!-- carousal end -->
   </div>
 </section>
 
